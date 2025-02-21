@@ -22,7 +22,7 @@ const connection = mysql.createConnection({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   port: process.env.DB_PORT,
-  ssl: process.env.DB_SSL === 'true' ? {} : false // SSL が `true` の場合のみ有効にする
+  ssl: process.env.DB_SSL
 });
 
 // データベース接続確認
